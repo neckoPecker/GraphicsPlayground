@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Roboto Mono Bold";
+    src: url("./fonts/Roboto_Mono/static/RobotoMono-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Mono Medium";
+    src: url("./fonts/Roboto_Mono/static/RobotoMono-Thin.ttf");
+}
+
+h1 {
+    padding-bottom: 10px;
+    border-color: #000000;
+    border-width: 1px;
+    border-bottom: solid;
+}
+
+h2 {
+    padding-bottom: 10px;
+    border-color: #000000;
+    border-width: 1px;
+    border-style: none none solid none;
+}
+
+html {
+    font-family: "Roboto Mono Medium";
+}
+
+body {
+    margin: 2%;
+    display: flex;
+    padding-left: 30%;
+    flex-direction: row;
+}
+
+.sidenav {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    background-color: #000000;
+    overflow: scroll;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    box-shadow: 5px 0px 100px grey;
+}
+
+.sidenav a {
+    font-family: "Roboto Mono Bold";
+    padding: 10px 30px 6px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #ffffff;
+    display: block;
+    border-bottom: 1px;
+    border-style: none none ridge none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+a {
+    color: black;
+}
+
+a:visted {
+    color: #000000;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+::selection {
+    background: black;
+    color: white;
+}
+
+.sidenav a::selection {
+    background: white;
+    color:black;
+}
